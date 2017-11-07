@@ -43,8 +43,8 @@ app.use('/profile', profile);
 app.use('/upgrade', upgrade);
 app.use('/authentication', authentication);
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + 'dir/index.html'));
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/dir/index.html'));
 });
 
 app.listen(port, () => {
