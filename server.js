@@ -29,7 +29,7 @@ promise.then( function(db){
 })
 
 // cors
-app.use(cors());
+app.use(cors({origin: 'https://polar-earth-78483.herokuapp.com/'}));
 //app.options('*', cors())
 
 // body parser
@@ -43,17 +43,6 @@ app.use('/profile', profile);
 app.use('/upgrade', upgrade);
 app.use('/authentication', authentication);
 
-const forceSSL = function(){
-    return function(req, res, next){
-      if(req.headers['x-forwarded-proto'] !== 'https'){
-        return res.redirect(['https://', req.get('Host'), req.url].join(''));
-      }
-      next();
-    }
-  }
-  
-  app.use(forceSSL());
-  
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
