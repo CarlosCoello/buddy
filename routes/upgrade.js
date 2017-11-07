@@ -44,7 +44,6 @@ module.exports = (router) => {
             } else {
                 console.log("Create Payment Response");
                 //console.log(payment);
-                res.send(payment);
                 for( let i = 0; i < payment.links.length; i++){
                     if(payment.links[i].rel === 'approval_url'){
                         res.redirect(payment.links[i].href);
