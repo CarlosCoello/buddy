@@ -44,7 +44,7 @@ app.use('/upgrade', upgrade);
 app.use('/authentication', authentication);
 
 app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/dir/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
 app.listen(port, () => {
