@@ -1,0 +1,145 @@
+<br>
+<br>
+<div id="payment-info-wrapper">
+  <form novalidate>
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label id="label" for="firstname">First name: </label>
+    </div>
+    <div class="form-group col-md-7">
+      <div id="label-value" class="d-flex align-items-center justify-content-between">
+        <input type="text" [(ngModel)]="firstname" name=firstname id="firstname" class="form-control" [disabled]="disableFirstName">
+        <div id="firstname-icons">
+            <i id="firstname-enable" class="fa fa-pencil-square-o fade-in-icons" aria-hidden="true" (click)="enableFirstName()"></i>
+            <i id="firstname-cancel"class="fa fa-ban fade-in-icons pause-fade-in" aria-hidden="true" (click)="cancelFirstNameUpdate()"></i>
+            <i id="firstname-update" class="fa fa-check-square-o fade-in-icons pause-fade-in" aria-hidden="true" (click)="updateFirstName()"></i>  
+        </div>      
+      </div>
+    </div>
+  </div>
+  <!-- first name label row closing tag -->
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label id="label" for="lastname">Last name: </label>
+    </div>
+    <div class="form-group col-md-7">
+      <div id="label-value" class="d-flex align-items-center justify-content-between">
+          <input type="text" [(ngModel)]="lastname" name="lastname" id="lastname" class="form-control" [disabled]="disableLastName">
+          <div id="firstname-icons">
+              <i id="lastname-enable" class="fa fa-pencil-square-o fade-in-icons" aria-hidden="true" (click)="enableLastName()"></i>
+              <i id="lastname-cancel" class="fa fa-ban fade-in-icons pause-fade-in" aria-hidden="true" (click)="cancelLastNameUpdate()"></i>
+              <i id="lastname-update" class="fa fa-check-square-o fade-in-icons pause-fade-in" aria-hidden="true" (click)="updateLastName()"></i>  
+          </div>  
+      </div>
+    </div>
+  </div>
+  <!-- last name label row closing tag -->
+  <div class="form-row">
+      <div class="form-group col-md-5">
+        <label id="label" for="address">Address: </label>
+      </div>
+      <div class="form-group col-md-7">
+        <div id="label-value" class="d-flex align-items-center justify-content-between">
+            <input type="text" [(ngModel)]="address" name="address" id="address" class="form-control" [disabled]="disableAddress">
+            <div id="firstname-icons">
+                <i id="address-enable" class="fa fa-pencil-square-o fade-in-icons" aria-hidden="true" (click)="enableAddress()"></i>
+                <i id="address-cancel" class="fa fa-ban fade-in-icons pause-fade-in" aria-hidden="true" (click)="cancelAddressUpdate()"></i>
+                <i id="address-update" class="fa fa-check-square-o fade-in-icons pause-fade-in" aria-hidden="true" (click)="updateAddress()"></i>
+            </div>  
+        </div>
+      </div>
+    </div>
+    <!-- Address label row closing tag -->
+    <div class="form-row">
+        <div class="form-group col-md-5">
+          <label id="label" for="city">City: </label>
+        </div>
+        <div class="form-group col-md-7">
+          <div id="label-value" class="d-flex align-items-center justify-content-between">
+              <input type="text" [(ngModel)]="city" name="city" id="city" class="form-control" [disabled]="disableCity">
+              <div id="firstname-icons">
+                  <i id="city-enable" class="fa fa-pencil-square-o fade-in-icons" aria-hidden="true" (click)="enableCity()"></i>
+                  <i id="city-cancel" class="fa fa-ban fade-in-icons pause-fade-in" aria-hidden="true" (click)="cancelCityUpdate()"></i>
+                  <i id="city-update" class="fa fa-check-square-o fade-in-icons pause-fade-in" aria-hidden="true" (click)="updateCity()"></i>  
+              </div>  
+          </div>
+        </div>
+      </div>
+      <!-- City label row closing tag -->
+      <div class="form-row">
+          <div class="form-group col-md-5">
+            <label id="label" for="state">State: </label>
+          </div>
+          <div class="form-group col-md-7">
+            <div id="label-value" class="d-flex align-items-center justify-content-between">
+                <input type="text" [(ngModel)]="state" name="state" id="state" class="form-control" [disabled]="disableState">
+                <div id="firstname-icons">
+                    <i id="state-enable" class="fa fa-pencil-square-o fade-in-icons" aria-hidden="true" (click)="enableState()"></i>
+                    <i id="state-cancel" class="fa fa-ban fade-in-icons pause-fade-in" aria-hidden="true" (click)="cancelStateUpdate()"></i>
+                    <i id="state-update" class="fa fa-check-square-o fade-in-icons pause-fade-in" aria-hidden="true" (click)="updateState()"></i>
+                </div>  
+            </div>
+          </div>
+        </div>
+        <!-- State label row closing tag -->
+        <div class="form-row">
+            <div class="form-group col-md-5">
+              <label id="label" for="card">Card: </label>
+            </div>
+            <div class="form-group col-md-7">
+              <div id="label-value" class="d-flex align-items-center justify-content-between">
+                  <select class="custom-select" id="card" name="card" [(ngModel)]="card" [disabled]="disableCard">
+                      <option value="select" selected>select type</option>
+                      <option *ngFor="let cdc of cardDebitCredit" [value]="cdc">{{ cdc }}</option>
+                    </select>
+                  <div id="firstname-icons">
+                      <i id="card-enable" class="fa fa-pencil-square-o fade-in-icons" aria-hidden="true" (click)="enableCard()"></i>
+                      <i id="card-cancel" class="fa fa-ban fade-in-icons pause-fade-in" aria-hidden="true" (click)="cancelCardUpdate()"></i>
+                      <i id="card-update" class="fa fa-check-square-o fade-in-icons pause-fade-in" aria-hidden="true" (click)="updateCard()"></i>
+                  </div>  
+              </div>
+            </div>
+          </div>
+          <!-- card label row closing tag -->
+          <div class="form-row">
+              <div class="form-group col-md-5">
+                <label id="label" for="cardtype">Card Type: </label>
+              </div>
+              <div class="form-group col-md-7">
+                <div id="label-value" class="d-flex align-items-center justify-content-between">
+                    <select class="custom-select" id="cardtype" name="cardtype" [(ngModel)]="cardtype" [disabled]="disableCardType">
+                        <option value="select" selected>select type</option>
+                        <option *ngFor="let ct of cardTypes" [value]="ct">{{ ct }}</option>
+                      </select>
+                    <div id="firstname-icons">
+                        <i id="cardtype-enable" class="fa fa-pencil-square-o fade-in-icons" aria-hidden="true" (click)="enableCardType()"></i>
+                        <i id="cardtype-cancel" class="fa fa-ban fade-in-icons pause-fade-in" aria-hidden="true" (click)="cancelCardTypeUpdate()"></i>
+                        <i id="cardtype-update" class="fa fa-check-square-o fade-in-icons pause-fade-in" aria-hidden="true" (click)="updateCardType()"></i>  
+                    </div>  
+                </div>
+              </div>
+            </div>
+            <!-- Card Type label row closing tag -->
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                  <label id="label" for="cardnum">Card Number: </label>
+                </div>
+                <div class="form-group col-md-7">
+                  <div id="label-value" class="d-flex align-items-center justify-content-between">
+                      <input type="text" [(ngModel)]="cardnum" name="cardnum" id="cardnum" class="form-control" [disabled]="disableCardNum">
+                      <div id="firstname-icons">
+                          <i id="cardnum-enable" class="fa fa-pencil-square-o fade-in-icons" aria-hidden="true" (click)="enableCardNum(email)"></i>
+                          <i id="cardnum-cancel" class="fa fa-ban fade-in-icons pause-fade-in" aria-hidden="true" (click)="cancelCardNumUpdate()"></i>
+                          <i id="cardnum-update" class="fa fa-check-square-o fade-in-icons pause-fade-in" aria-hidden="true" (click)="updateCardNum()"></i>  
+                      </div>  
+                  </div>
+                </div>
+              </div>
+              <!-- Card Num label row closing tag -->
+  </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>

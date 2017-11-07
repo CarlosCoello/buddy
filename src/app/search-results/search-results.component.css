@@ -1,0 +1,32 @@
+#search-results {
+    margin-top: 100px;
+}
+
+#sr-card .card {
+    margin-bottom: 20px;
+}
+
+#sr-card .card {
+    background: #fff;
+    border: none;
+    box-shadow: 0px 12px 12px -12px #4f4f4f;
+}
+
+#sr-card .card .card-header {
+    background: #1FA2FF;
+}
+
+#sr-card .card .card-header h3:first-child {
+    font-family: Raleway, sans-serif;
+    color: #fff;
+}
+
+#sr-card .card .card-header h3:last-child {
+    font-family: Raleway, sans-serif;
+    font-weight: bolder;
+}
+
+#sr-card .card .card-footer {
+    border-top: none;
+    background: #f2f2f2;
+}

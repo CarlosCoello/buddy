@@ -1,0 +1,11 @@
+#applied-job {
+    font-family: Open Sans, sans-serif;
+    margin: 20px;
+    background: #e0e0e0;
+    padding: 10px;
+    box-shadow: 0px 12px 12px -12px #e0e0e0;
+}
+
+#applied-job h4 {
+    margin: 0;
+}

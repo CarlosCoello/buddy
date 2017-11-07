@@ -1,0 +1,59 @@
+
+<div class="container">
+    <div id="register-wrapper" class="d-flex align-items-center justify-content-center">
+      <form [formGroup]="registerForm" (ngSubmit)="registerMe()" novalidate>
+        <div class="form-row">
+          <div class="form-group col-md-12" *ngIf="showMessage">
+            <div class={{messageClass}}>
+              {{ message }}
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="firstname">first name</label>
+            <input type="text" name="firstname" class="form-control" id="firstname" formControlName="firstname">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lastname">last name</label>
+            <input type="text" name="lastname" class="form-control" id="lastname" formControlName="lastname">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="email">email</label>
+            <input type="email" name="email" class="form-control" id="email" formControlName="email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="username">username</label>
+            <input type="text" name="username" class="form-control" id="username" formControlName="username">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="password">password</label>
+            <input type="password" name="password" class="form-control" id="password" formControlName="password">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="confirm">confirm password</label>
+            <input type="password" name="confirm" class="form-control" id="confirm" formControlName="confirm">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-check col-md-12">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" name="candidate" formControlName="candidate">
+              I am searching for jobs
+            </label>
+          </div>
+          <div class="form-check col-md-12">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" name="post" formControlName="post">
+              I am searching for candidates
+              </label>
+            </div>
+        </div>
+        <input type="submit" class="btn btn-primary" [disabled]="!registerForm.valid">
+      </form>
+    </div>
+  </div>

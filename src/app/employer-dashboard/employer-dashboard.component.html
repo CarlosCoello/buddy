@@ -1,0 +1,30 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <div id="employer-wrapper" class="text-center">
+    <p class="lead">Employer Dashboard</p>      
+  </div>
+  <div id="dashboard-nav">
+      <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['./profile']">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['./postedjobs']">Posted Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['./candidates']">Candidates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['./paymentinfo']">Payment Info</a>
+          </li>
+        </ul>
+  </div>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

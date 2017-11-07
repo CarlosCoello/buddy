@@ -1,0 +1,59 @@
+<br>
+<br>
+<div id="profile-wrapper">
+  <form novalidate>
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label id="label" for="firstname">First name: </label>
+    </div>
+    <div class="form-group col-md-7">
+      <div id="label-value" class="d-flex align-items-center justify-content-between">
+        <input type="text" [(ngModel)]="firstname" name=firstname id="firstname" class="form-control" [disabled]="disableFirstName">
+        <div id="firstname-icons">
+            <i id="firstname-enable" class="fa fa-pencil-square-o fade-in-icons" aria-hidden="true" (click)="enableFirstname()"></i>
+            <i id="firstname-cancel"class="fa fa-ban fade-in-icons pause-fade-in" aria-hidden="true" (click)="cancelFirstNameUpdate()"></i>
+            <i id="firstname-update" class="fa fa-check-square-o fade-in-icons pause-fade-in" aria-hidden="true" (click)="updateFirstName()"></i>  
+        </div>      
+      </div>
+    </div>
+  </div>
+  <!-- first name label row closing tag -->
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label id="label" for="lastname">Last name</label>
+    </div>
+    <div class="form-group col-md-7">
+      <div id="label-value" class="d-flex align-items-center justify-content-between">
+          <input type="text" [(ngModel)]="lastname" name="lastname" id="lastname" class="form-control" [disabled]="disableLastName">
+          <div id="firstname-icons">
+              <i id="lastname-enable" class="fa fa-pencil-square-o fade-in-icons" aria-hidden="true" (click)="enableLastname(lastname)"></i>
+              <i id="lastname-cancel" class="fa fa-ban fade-in-icons pause-fade-in" aria-hidden="true" (click)="cancelLastNameUpdate()"></i>
+              <i id="lastname-update" class="fa fa-check-square-o fade-in-icons pause-fade-in" aria-hidden="true" (click)="updateLastName()"></i>  
+          </div>  
+      </div>
+    </div>
+  </div>
+  <!-- last name label row closing tag -->
+  <div class="form-row">
+      <div class="form-group col-md-5">
+        <label id="label" for="email">Email</label>
+      </div>
+      <div class="form-group col-md-7">
+        <div id="label-value" class="d-flex align-items-center justify-content-between">
+            <input type="text" [(ngModel)]="email" name="email" id="email" class="form-control" [disabled]="disableEmail">
+            <div id="firstname-icons">
+                <i id="email-enable" class="fa fa-pencil-square-o fade-in-icons" aria-hidden="true" (click)="enableEmail(email)"></i>
+                <i id="email-cancel" class="fa fa-ban fade-in-icons pause-fade-in" aria-hidden="true" (click)="cancelEmailUpdate()"></i>
+                <i id="email-update" class="fa fa-check-square-o fade-in-icons pause-fade-in" aria-hidden="true" (click)="updateEmail()"></i>  
+            </div>  
+        </div>
+      </div>
+    </div>
+    <!-- Email label row closing tag -->
+  </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>

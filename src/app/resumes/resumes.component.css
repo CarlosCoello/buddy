@@ -1,0 +1,32 @@
+#resume {
+    font-family: Open Sans, sans-serif;
+    margin: 20px;
+    background: #e0e0e0;
+    padding: 10px;
+    box-shadow: 0px 12px 12px -12px #e0e0e0;
+}
+
+#resume-top h4,
+#resume-top h5 {
+    margin: 0;
+}
+
+#resume-top .fa-pencil-square-o {
+    color: #000;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+#resume-top .fa-pencil-square-o:hover {
+    color: #007bff;
+}
+
+#resume-top .fa-times {
+    color: #000;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+#resume-top .fa-times:hover {
+    color: red;
+}

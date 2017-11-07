@@ -1,0 +1,32 @@
+#cover-letter {
+    font-family: Open Sans, sans-serif;
+    margin: 20px;
+    background: #e0e0e0;
+    padding: 10px;
+    box-shadow: 0px 12px 12px -12px #e0e0e0;
+}
+
+#cover-letter h4,
+#cover-letter h5 {
+    margin: 0;
+}
+
+#cover-letter .fa-pencil-square-o {
+    color: #000;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+#cover-letter .fa-pencil-square-o:hover {
+    color: #007bff;
+}
+
+#cover-letter .fa-times {
+    color: #000;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+#cover-letter .fa-times:hover {
+    color: red;
+}

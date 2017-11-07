@@ -1,0 +1,48 @@
+#single-post-wrapper .post-body {
+    background: #eef2f3;
+    width: 100%;
+    height: auto;
+}
+
+.post-header {
+    background: #1FA2FF;
+    padding: 10px;
+}
+
+.post-header h4 {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+}
+
+.post-body h3 {
+    font-family: Raleway, sans-serif;
+    padding: 50px 10px;
+    text-transform: capitalize;
+}
+
+.post-body p {
+    font-family: Open Sans, sans-serif;
+    text-align: justify;
+    line-height: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+}
+
+#apply-btn .apply {
+    width: 250px;
+    height: 50px;
+    color: #000;
+    font-family: Raleway, sans-serif;
+    background: #fff;
+    box-shadow: 0px 12px 12px -12px #007bff;
+    border: 2px solid #1FA2FF;
+    cursor: pointer;
+    transition: opacity .2s, background .2s, color .2s;
+}
+
+#apply-btn .apply:hover {
+    background: #007bff;
+    color: #fff;
+    opacity: .8;
+}
