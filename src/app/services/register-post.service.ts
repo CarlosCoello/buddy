@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class RegisterPostService {
 options;
-url = 'http://localhost:9000/register';
+url = 'https://polar-earth-78483.herokuapp.com/register';
 
   constructor(private http: Http) { }
 
