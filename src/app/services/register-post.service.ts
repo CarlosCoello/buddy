@@ -18,7 +18,7 @@ url = 'http://localhost:9000/register';
   };
 
   upgradeAccount(info){
-    return this.http.post('http://localhost:9000/upgrade' + '/pay', info, this.options).map(res => res.json());
+    return this.http.post('https://polar-earth-78483.herokuapp.com/upgrade' + '/pay', info, this.options).map(res => res.json());
   }
 
   registerUser(info) {
