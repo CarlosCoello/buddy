@@ -16,8 +16,8 @@ module.exports = (router) => {
                 "payment_method": "paypal"
             },
             "redirect_urls": {
-                "return_url": "http://localhost:4200/upgradesuccess",
-                "cancel_url": "http://locahost:4200/upgradecancel"
+                "return_url": "http://resumebuddy.site/upgradesuccess",
+                "cancel_url": "http://resumebuddy.site/upgradecancel"
             },
             "transactions": [{
                 "item_list": {

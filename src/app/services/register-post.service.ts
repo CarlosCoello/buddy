@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class RegisterPostService {
 options;
-url = 'https://polar-earth-78483.herokuapp.com/register';
+url = 'http://resumebuddy.site/register';
 
   constructor(private http: Http) { }
 
@@ -18,7 +18,7 @@ url = 'https://polar-earth-78483.herokuapp.com/register';
   };
 
   upgradeAccount(payment){
-    return this.http.post('https://polar-earth-78483.herokuapp.com/upgrade' + '/pay', payment, this.options).map(res => res.json());
+    return this.http.post('http://resumebuddy.site/upgrade' + '/pay', payment, this.options).map(res => res.json());
   }
 
   registerUser(info) {

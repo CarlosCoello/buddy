@@ -6,7 +6,7 @@ import { tokenNotExpired } from 'angular2-jwt';
 @Injectable()
 export class AuthenticateService {
 options: any;
-url = 'http://localhost:9000/authentication';
+url = 'http://resumebuddy.site/authentication';
 authenticateToken: any;
 authenticateUser: any;
 

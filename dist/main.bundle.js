@@ -26,7 +26,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AuthenticateService = (function () {
     function AuthenticateService(http) {
         this.http = http;
-        this.url = 'http://localhost:9000/authentication';
+        this.url = 'http://resumebuddy.site/authentication';
     }
     AuthenticateService.prototype.createAuthHeaders = function () {
         this.sendToken();
@@ -105,7 +105,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var RegisterPostService = (function () {
     function RegisterPostService(http) {
         this.http = http;
-        this.url = 'https://polar-earth-78483.herokuapp.com/register';
+        this.url = 'http://resumebuddy.site/register';
     }
     RegisterPostService.prototype.createAuthHeaders = function () {
         this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["RequestOptions"]({
@@ -116,7 +116,7 @@ var RegisterPostService = (function () {
     };
     ;
     RegisterPostService.prototype.upgradeAccount = function (payment) {
-        return this.http.post('https://polar-earth-78483.herokuapp.com/upgrade' + '/pay', payment, this.options).map(function (res) { return res.json(); });
+        return this.http.post('http://resumebuddy.site/upgrade' + '/pay', payment, this.options).map(function (res) { return res.json(); });
     };
     RegisterPostService.prototype.registerUser = function (info) {
         return this.http.post(this.url + '/newUser', info).map(function (res) { return res.json(); });
@@ -187,7 +187,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var SearchGetService = (function () {
     function SearchGetService(http) {
         this.http = http;
-        this.url = 'http://localhost:9000/search/';
+        this.url = 'http://resumebuddy.site/search/';
     }
     SearchGetService.prototype.createAuthHeaders = function () {
         this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["RequestOptions"]({
@@ -1369,7 +1369,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var PositionsService = (function () {
     function PositionsService(http) {
         this.http = http;
-        this.url = 'http://localhost:9000/positions';
+        this.url = 'http://resumebuddy.site/positions';
     }
     PositionsService.prototype.createPosition = function (info) {
         return this.http.post(this.url + '/position', info).map(function (res) { return res.json(); });

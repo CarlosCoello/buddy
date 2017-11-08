@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SearchGetService {
 options;
-url = 'http://localhost:9000/search/';
+url = 'http://resumebuddy.site/search/';
 
   constructor(private http: Http) { }
 

@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class PositionsService {
-url = 'http://localhost:9000/positions';
+url = 'http://resumebuddy.site/positions';
 
   constructor(private http: Http) { }
 

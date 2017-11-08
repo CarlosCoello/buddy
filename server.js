@@ -29,7 +29,7 @@ promise.then( function(db){
 })
 
 // cors
-app.options('*', cors())
+app.use( cors({ origin: 'http://resumebuddy.site/' }));
 //https://polar-earth-78483.herokuapp.com/
 // body parser
 app.use(bodyParser.urlencoded({ extended: false }));
