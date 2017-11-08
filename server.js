@@ -29,8 +29,7 @@ promise.then( function(db){
 })
 
 // cors
-app.use(cors({origin: 'https://polar-earth-78483.herokuapp.com/'}));
-//app.options('*', cors())
+app.options('*', cors())
 //https://polar-earth-78483.herokuapp.com/
 // body parser
 app.use(bodyParser.urlencoded({ extended: false }));
