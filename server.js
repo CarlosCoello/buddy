@@ -12,7 +12,7 @@ const profile = require('./routes/profile')(router);
 const upgrade = require('./routes/upgrade')(router);
 const authentication = require('./routes/authentication')(router);
 const bodyParser = require('body-parser');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 9000;
 
 // mongoose promise
 mongoose.Promise = global.Promise;
@@ -31,7 +31,7 @@ promise.then( function(db){
 // cors
 app.use(cors({origin: 'https://polar-earth-78483.herokuapp.com/'}));
 //app.options('*', cors())
-
+//https://polar-earth-78483.herokuapp.com/
 // body parser
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

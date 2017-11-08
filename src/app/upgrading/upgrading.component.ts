@@ -36,7 +36,7 @@ messageClass: String;
       lastname: this.upgradeForm.get('lastname').value
     }
 
-    this.rps.upgradeAccount(payment).subscribe( data => console.log(data));
+    this.rps.upgradeAccount(payment).subscribe(data => console.log(data));
   }
 
 

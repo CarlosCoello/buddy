@@ -1,7 +1,6 @@
 const config = require('../config/database');
 const paypal = require('paypal-rest-sdk');
 
-
 paypal.configure({
     'mode': 'sandbox', //sandbox or live 
     'client_id': 'AUmolmqCiZkxiiHq-qekBmxb9KZ8D1KlarJFvIMM9fLTf8v4KBGz2jQtmcRMHpMK79-fEnVUSkH0a4aM',

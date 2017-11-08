@@ -115,8 +115,8 @@ var RegisterPostService = (function () {
         });
     };
     ;
-    RegisterPostService.prototype.upgradeAccount = function (info) {
-        return this.http.post('https://polar-earth-78483.herokuapp.com/upgrade' + '/pay', info, this.options).map(function (res) { return res.json(); });
+    RegisterPostService.prototype.upgradeAccount = function (payment) {
+        return this.http.post('https://polar-earth-78483.herokuapp.com/upgrade' + '/pay', payment, this.options).map(function (res) { return res.json(); });
     };
     RegisterPostService.prototype.registerUser = function (info) {
         return this.http.post(this.url + '/newUser', info).map(function (res) { return res.json(); });
